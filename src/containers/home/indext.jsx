@@ -20,7 +20,7 @@ const Home = () => {
                 <h1>
                     Hello, I'm Sovannaphom
                     <br />
-                    Front end developer
+                    FrontEnd developer
                 </h1>
             </div>
             <Animate
