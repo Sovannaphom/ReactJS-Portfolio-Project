@@ -26,7 +26,7 @@ const Home = () => {
             <Animate
             play
             duration={1.5}
-            delay={1}
+            delay={0.8}
             start={{transform: 'translateY(550px)'}}
             end={{transform: 'translateX(0px)'}}
             >
