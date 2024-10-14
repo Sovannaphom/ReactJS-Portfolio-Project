@@ -1,7 +1,6 @@
 import React from "react";
-import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pagHeaderContent";
-
+import { BsInfoCircleFill } from "react-icons/bs";
 
 const Contact = () => {
   return (
@@ -10,8 +9,9 @@ const Contact = () => {
         headerText="My Contact"
         icon={<BsInfoCircleFill size={40} />}
       />
-      <div className="contact__conten">
+      <div className="contact__content">
         <h3>FrontEnd Developer</h3>
+        <span>{}</span>
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import PageHeaderContent from "../../components/pagHeaderContent";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="portfolio">
+    <section id="protfolio" className="portfolio">
       <PageHeaderContent
         headerText="My Portfolio"
         icon={<BsInfoCircleFill size={40} />}

@@ -1,22 +1,35 @@
 import React from "react";
-import { BsInfoCircleFill } from 'react-icons/bs';
+import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pagHeaderContent";
+import { Animate } from "react-simple-animate";
 
-const jobSummary = "A highly skilled and detail-oriented Front-End Developer with [X] years of experience in building responsive and dynamic websites and applications. Proficient in modern front-end technologies such as HTML5, CSS3, JavaScript, and ReactJS, with a strong understanding of web development best practices and user experience design principles. Adept at turning wireframes and mockups into interactive, visually appealing, and user-friendly interfaces. Committed to writing clean, maintainable code and collaborating effectively with back-end developers, designers, and project stakeholders to deliver high-quality digital solutions.";
+const jobSummary =
+  "I am a front-end web developer with experience building responsive, dynamic websites using HTML, CSS, JavaScript, and React. I focus on creating user-friendly interfaces, optimizing performance, and ensuring compatibility across browsers. My expertise includes developing clean, efficient code, collaborating with teams, and implementing modern design practices for seamless user experiences.";
 
 const About = () => {
-    return (
-        <section id="about" className="about">
-            <PageHeaderContent
-                headerText="About Me"
-                icon={<BsInfoCircleFill size={40} />}
-            />
-            <div className="about__content">
-                <h3>FrontEnd Developer</h3>
-                <p>{jobSummary}</p>
-            </div>
-        </section>
-    )
-}
+  return (
+    <section id="about" className="about">
+      <PageHeaderContent
+        headerText="About Me"
+        icon={<BsInfoCircleFill size={40} />}
+      />
+      <div className="about__content">
+        <Animate
+          play
+          duration={1.5}
+          delay={0.1}
+          start={{transform: 'translateX(-900px)'}}
+          end={{transform: 'translatex(0px)'}}
+
+        >
+          <h3>FrontEnd Developer</h3>
+          <p>{jobSummary}</p>
+        </Animate>
+
+        <h3>Personal Infomation</h3>
+      </div>
+    </section>
+  );
+};
 
 export default About;
