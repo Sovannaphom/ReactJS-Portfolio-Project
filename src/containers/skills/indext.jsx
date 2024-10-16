@@ -26,7 +26,7 @@ const Skills = () => {
               <h3 className="skills__content-wrapper__inner-content__category-text">
                 {item.labe}
               </h3>
-              <div>
+              <div className="skills__content-wrapper__inner-content_progressbar-container">
                 {item.data.map((skillItem, j) => (
                   <AnimateKeyframes
                     play
@@ -41,6 +41,8 @@ const Skills = () => {
                         strokeWidth="2"
                         strokeColor="var(--yellow-them-main-color)"
                         trailWidth="2"
+                        style={{width:'100%'}}
+                        //className="rc_progressbar_custom"
                         strokeLinecap="square"
                       />
                     </div>
