@@ -40,7 +40,68 @@
                 grid-template-columns: repeat(2,1fr);
                 gap: 40px;
                 margin-bottom: 30px;
+
+                div{
+                    position: relative;
+                    .inputName,
+                    .inputEmail,
+                    .inputDescription{
+                        width: 100%;
+                        border: 2px solid var(--yellow-them-main-color);
+                        padding: 16px 12px;
+                        transition: all 0.5s ease;
+                        position: relative;
+                        background-color: transparent;
+                        color: var(--yellow-them-sub-text-color);
+                    }
+
+                    .nameLabel,
+                    .emailLabel,
+                    .descriptionLabel{
+                        font-weight: 500;
+                        position: absolute;
+                        top: 7px;
+                        left: 12px;
+                        transition: all 0.2s ease;
+                        font-size: 16px;
+                        color: var(--yellow-them-sub-text-color);
+                    }
+
+                    .inputName:focus,
+                    .inputEmail:focus,
+                    .inputDescription:focus{
+                        outline: none;
+                    }
+
+                    .inputName:focus + .nameLabel,
+                    .inputName:valid + .nameLabel,
+                    .inputEmail:focus + .emailLabel,
+                    .inputEmail:valid + .emailLabel,
+                    .inputDescription:focus + .descriptionLabel, 
+                    .inputDescription:valid + .descriptionLabel{
+                        font-size: 18px;
+                        top: -30px;
+                        left: 0px;
+
+                        &:hover{
+                            color: #0000;
+                            background: var(--yellow-them-main-color) ;
+                        }
+                    }
+
+                }
             }
+        }
+
+        button{
+            cursor: pointer;
+            padding: 10px 70px;
+            font-size: 2rem;
+            background: transparent;
+            color: var(--yellow-them-main-color);
+            border: 1.5px solid var(--yellow-them-main-color);
+            font-weight: 500;
+            border-radius: 4px;
         }
     }
 }

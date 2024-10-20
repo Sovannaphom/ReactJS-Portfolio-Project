@@ -2,7 +2,7 @@ import React from "react";
 import PageHeaderContent from "../../components/pagHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
-import './style.scss'
+import "./style.scss";
 
 const Contact = () => {
   return (
@@ -29,21 +29,32 @@ const Contact = () => {
           end={{ transform: "translateX(0px)" }}
         >
           <div className="contact__content__form">
-            <div className="contact__content__controlswrapper">
-              <div className="nameWrapper">
-                <input name="name" className="inputName" type={"text"} />
+            <div className="contact__content__form__controlswrapper">
+              <div>
+                <input
+                  required
+                  name="name"
+                  className="inputName"
+                  type={"text"}
+                />
                 <label htmlFor="name" className="nameLabel">
                   Name
                 </label>
               </div>
-              <div className="emailWrapper">
-                <input name="email" className="inputEmail" type={"email"} />
+              <div>
+                <input
+                  required
+                  name="email"
+                  className="inputEmail"
+                  type={"email,text"}
+                />
                 <label htmlFor="email" className="emailLabel">
                   Email
                 </label>
               </div>
-              <div className="descriptionWrapper">
+              <div>
                 <input
+                  required
                   name="description"
                   className="inputDescription"
                   type={"text"}
